@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PuzzleRepository extends JpaRepository<Puzzle, Long> {
-    Puzzle findByPuzzleId(Long puzzleId);
+    //TODO
 }
