@@ -22,7 +22,7 @@ public class GameSessionController {
         String username = (String) request.get("username");
         Long roomId = Long.valueOf(request.get("roomId").toString());
 
-        return ResponseEntity.ok(sessionService.createSession(roomName, username, roomId));
+        return ResponseEntity.ok(sessionService.createGameSession(roomName, username, roomId));
     }
 
     @PostMapping("/{sessionId}/join")
