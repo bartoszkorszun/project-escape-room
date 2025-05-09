@@ -1,11 +1,16 @@
 package com.bartoszkorszun.project_escape_room.service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import com.bartoszkorszun.project_escape_room.model.GameSession;
 import com.bartoszkorszun.project_escape_room.model.Player;
+import com.bartoszkorszun.project_escape_room.model.Room;
+import com.bartoszkorszun.project_escape_room.repository.GameSessionRepository;
 import com.bartoszkorszun.project_escape_room.repository.PlayerRepository;
 import com.bartoszkorszun.project_escape_room.repository.RoomRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor

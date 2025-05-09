@@ -1,5 +1,15 @@
 package com.bartoszkorszun.project_escape_room.controller;
 
+import com.bartoszkorszun.project_escape_room.model.GameSession;
+import com.bartoszkorszun.project_escape_room.model.Player;
+import com.bartoszkorszun.project_escape_room.service.GameSessionService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/sessions")
 @RequiredArgsConstructor
