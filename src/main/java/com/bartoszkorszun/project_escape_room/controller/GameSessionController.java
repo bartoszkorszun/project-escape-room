@@ -28,7 +28,7 @@ public class GameSessionController {
     @PostMapping("/{sessionId}/join")
     public ResponseEntity<Player> joinSession(
         @PathVariable Long sessionId, 
-        @RequestBody Map<String, Object> request
+        @RequestBody Map<String, String> request
     ) {
         String username = request.get("username");
         return ResponseEntity.ok(sessionService.joinSession(sessionId, username));
